@@ -57,7 +57,7 @@ spec:
           periodSeconds: 3
         securityContext: 
           allowPrivilegeEscalation: false
-     imagePullSecrets:
+      imagePullSecrets:
       - name: harbor-cred
 ---
 apiVersion: v1

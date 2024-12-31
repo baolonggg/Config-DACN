@@ -24,8 +24,6 @@ spec:
           name: rabbitmq-amqp
         - containerPort: 15672
           name: rabbitmq-http
-      imagePullSecrets:
-      - name: harbor-cred
         env:
         - name: RABBITMQ_DEFAULT_USER
           value: "username"
@@ -44,6 +42,8 @@ spec:
           subPath: enabled_plugins
         securityContext: 
           allowPrivilegeEscalation: false
+      imagePullSecrets:
+      - name: harbor-cred
       volumes:
       - name: rabbitmq-enabled-plugins
         configMap:

@@ -77,7 +77,7 @@ spec:
             memory: 128Mi    
             # Sử dụng imagePullSecrets để ArgoCD có thể pull image từ Harbor
       imagePullSecrets:
-      - name: harbor-registry-secret
+      - name: harbor-cred
 ---
 apiVersion: v1
 kind: Service

@@ -24,6 +24,8 @@ spec:
           name: rabbitmq-amqp
         - containerPort: 15672
           name: rabbitmq-http
+      imagePullSecrets:
+      - name: harbor-cred
         env:
         - name: RABBITMQ_DEFAULT_USER
           value: "username"

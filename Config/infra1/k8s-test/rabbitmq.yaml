@@ -57,7 +57,7 @@ data:
 kind: ConfigMap
 metadata:
   name: rabbitmq-enabled-plugins   
-  namespace: prod         
+  namespace: testing        
 ---
 apiVersion: v1
 kind: Service

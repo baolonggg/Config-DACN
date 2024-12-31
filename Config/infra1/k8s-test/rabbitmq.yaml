@@ -42,6 +42,8 @@ spec:
           subPath: enabled_plugins
         securityContext: 
           allowPrivilegeEscalation: false
+      imagePullSecrets:
+      - name: harbor-cred
       volumes:
       - name: rabbitmq-enabled-plugins
         configMap:

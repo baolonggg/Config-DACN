@@ -18,7 +18,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: store-front
-        image: harbor.thienngo.click/devsecops/microservice/store-front:1
+        image: harbor.thienngo.click/devsecops-main/microservice/store-front:1
         ports:
         - containerPort: 8080
           name: store-front
